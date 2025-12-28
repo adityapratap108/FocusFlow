@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow+ - Study & Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="daily-summary">
+            <h1>Today's Study</h1>
+            <div id="total-time-display" class="total-time">00:00:00</div>
+        </header>
+
+        <section class="main-timer-section">
+            <h2 id="current-subject-name">No Subject Selected</h2>
+            <div id="main-timer-display" class="timer-display">00:00:00</div>
+            <button id="start-stop-button" class="start-button">Start Study</button>
+        </section>
+        
+        <section class="subject-list-section">
+            <h2 id="subject-list-section-header-2">Subject Goals</h2>
+            <div id="subject-list" class="subject-list"></div>
+            <div class="add-subject">
+                <input type="text" id="new-subject-input" placeholder="New Subject Name">
+                <button id="add-subject-button">+</button>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <button id="toggle-stats-btn" class="start-button stats-toggle">View Daily Stats 📊</button>
+            <div id="stats-container" class="hidden">
+                <canvas id="studyChart"></canvas>
+                <div id="stats-details"></div>
+            </div>
+        </section>
+
+        <section id="task-section" class="task-section hidden">
+            <h3 id="task-subject-title">Tasks</h3>
+            <div id="task-list" class="task-list"></div>
+            <div class="add-task">
+                <input type="text" id="new-task-input" placeholder="Add new task">
+                <button id="add-task-button">Add</button>
+            </div>
+        </section>
+
+        <section id="pomodoro-section" class="pomodoro-section">
+            <h2 id="pomodoro-header-2">Pomodoro Timer 🍅</h2>
+            <div class="pomodoro-settings">
+                <input type="text" id="pomodoro-activity-input" placeholder="Activity">
+                <div class="time-inputs" style="display: inline">
+                    <label for="pomodoro-study-minutes">Time:</label>
+                    <input type="number" id="pomodoro-study-minutes" value="25" min="1">
+                </div>
+            </div>
+            <div class="pomodoro-timer-controls">
+                <div id="pomodoro-timer-display" class="timer-display small-timer">25:00</div>
+                <button id="pomodoro-start-stop-button" class="start-button">Start Pomodoro</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
