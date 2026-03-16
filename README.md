@@ -2,7 +2,7 @@
 
 FocusFlow is a sleek, intuitive Kanban-style task management application designed to streamline your productivity. It features a modern dark-themed UI with purple accents, persistent local storage, and seamless drag-and-drop functionality.
 
-![FocusFlow Preview](https://via.placeholder.com/800x450?text=FocusFlow+Kanban+Board+Preview) 
+![FocusFlow Preview](https://adityapratap108.github.io/FocusFlow/) 
 
 ## ✨ Features
 
